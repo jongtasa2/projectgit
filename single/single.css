@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* single.css */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Gothic', sans-serif; */
+
+/*  */
+*{margin: 0;padding: 0;box-sizing:border-box;}
+ol,li,ul{list-style: none;}
+img{border: none;vertical-align: top;}
+a{text-decoration: none;}
+body{font:normal 1em/1.5em  'Montserrat', 'Nanum Gothic', sans-serif;}
+html,body{width: 100%; height: 100%; /**/}
+
+/*  */
+.header{width: 100%;}
+
+.section{}
+
+.footer{}
+
+
+
+/* .pagi -------------------------------------------------------------------------------------- */
+.pagi{position: fixed;right: 20px;z-index: 100;top: 50%;margin-top: -175px;}
+.pagi .pbar{width: 30px;height: 30px;background: #fff;margin-bottom: 20px;position: relative;cursor: pointer;
+	box-shadow:0px 1px 5px #222;border-radius:50%;}
+.activePagi{background: #FF8672 !important;}
+
+/* transition -------------------------------------------------------------------------------------- */
+.section .story,
+.section .beer,
+.section .bre,
+.section .tour,
+.section .reser,
+.section .contact{/* position: relative; */}
+
+.section .story .storywrap,
+.section .beer .beerwrap,
+.section .bre .brewrap,
+.section .tour .tourwrap,
+.section .reser .reserwrap,
+.section .contact .parallax{opacity: 0;position: relative;bottom: -50px;}
+
+/* .header -------------------------------------------------------------------------------------- */
+.header{position: relative;height: 100%;background: #2DBCCC;}
+
+.header #homeimg{width: 100%;height: 100%;/* opacity: 1; */position: relative;
+	animation-name:bgop;
+	animation-duration:1s;
+	animation-iteration-count:1;}
+
+@keyframes bgop{
+	0%{left: -9999px;}
+	50%{left:500px;}
+	70%{left:-200px}
+	80%{left:0}
+	90%{left:-50px}
+	100%{left: 0;}
+}
+
+.header .logo{position: absolute;top: 20px;left: 50%;margin-left: -48.5px;}
+.header .gnb{position: absolute;*zoom:1; width:80%; top: 70px;left: 50%;margin-left: -40%;/**/}
+.header .gnb:after{display: block;clear: both;content: '';}
+.header .gnb li{float: left;width: 16.6666%;}
+.header .gnb li a{text-align: center;display: block;color: #fff;font-weight: bold;font-size: 1.1em;
+	text-shadow:0px 1px 5px #222;}
+.header .gnb li:hover a{color:#303E57}
+
+.header #arrow{position: absolute;bottom: 50px;left: 50%;margin-left: -22.5px;color: #fff;font-size: 3em;cursor: pointer;
+			animation-name:arrowmv;
+			animation-duration:1s;
+			animation-iteration-count:infinite;}
+
+@keyframes arrowmv{
+	0%{bottom:50px}
+	50%{bottom:80px}
+	100%{bottom: 50px}
+}
+
+.header .snsbox{position: absolute;right: 30px;bottom: 30px;*zoom:1;}
+.header .snsbox:after{display: block;clear: both;content: '';}
+.header .snsbox a{display: block;float: left;;margin-right: 10px;}
+.header .snsbox a:last-child{margin-right: 0;}
+.header .snsbox a .fa{font-size: 32px;color: #fff;}
+
+.header .fixgnb{*zoom:1;position: fixed;top: 0;left: 0;width: 100%;background:#303E57;
+		display: none;z-index: 999;}
+.header .fixgnb:after{display: block;clear: both;content: '';}
+.header .fixgnb li{float: left;width: 14.2857%;}
+.header .fixgnb li a{text-align: center;display: block;color: #fff;padding: 10px;}
+.header .fixgnb li:hover a{/* color: #FF8672; */}
+.header .fixgnb li a img{width:30%;}
+
+.header .mheader{position: fixed;z-index: 5100;top: 15px;left: 10px;cursor: pointer;display: none;}
+.header .mheader .mline{width: 40px;height: 5px;background: #fff;margin-bottom: 5px;box-shadow:0px 1px 3px #222;position: relative;transition:0.5s;}
+
+/* .mmenu -------------------------------------------------------------------------------------- */
+.mmenu{position: fixed;top: 0;left: 0;background: rgba(48,62,87,0.95);z-index: 5000;width: 100%;height: 100%;display: none;}
+.mmenu ul{}
+.mmenu ul li{text-align: center;padding: 10px;padding-top: 35px;}
+.mmenu ul li a{color: #fff;padding: 8px;	}
+.mmenu ul li a img{	}
+
+
+/* .active -------------------------------------------------------------------------------------- */
+.active{color: #FF8672 !important;text-decoration: underline;}
+.active2{color: #FF8672 !important;border-bottom: 2px solid #FF8672;font-weight: bold;	/* text-decoration: underline; */	}
+
+/* .section -------------------------------------------------------------------------------------- */
+.section{}
+
+/* .button -------------------------------------------------------------------------------------- */
+.prevbtn,.nextbtn{width: 40px;height: 40px;font-size: 2em;color: #fff;background: rgba(0,0,0,0.7);
+text-align: center;line-height: 40px;cursor: pointer;font-weight: bold;position: absolute;z-index: 10;}
+.prevbtn{top:50%;margin-top: -20px;left: 0;z-index: 10;}
+.nextbtn{top:50%;margin-top: -20px;right:0;z-index: 10;}
+
+
+/* -- story ------------------------------------------------------------------------------------------- */
+.section .story{*zoom:1;width: 60%;margin: 0 auto;color:#474747;}
+.section .story:after{clear: both;display: block;content: '';}
+.section .story .storywrap{padding-top:60px;padding-bottom: 20px;}
+.section .story .storywrap:after{clear: both;display: block;content: '';}
+
+.section .story .stTit{padding: 20px;text-align: center;font-size: 2.5em;}
+.section .story .stTxt{text-align: center;padding-bottom: 20px;}
+
+.section .story .stleft{float: left;	padding: 10px;width: 48%;padding-bottom: 50px;}
+.section .story .stleft .symbol{display: block;width: 100%;}
+.section .story .txtbox{text-align: center;float: left;width: 48%;margin-top: 12%;}
+
+
+/* -- beer ------------------------------------------------------------------------------------------- */
+.section .beer{*zoom:1;position: relative;background:#37BDC9;}
+.section .beer:after{display: block;clear: both;content: '';}
+.section .beer .beerwrap{padding-top:60px;padding-bottom: 20px;}
+.section .beer .beerwrap:after{display: block;clear: both;content: '';}
+
+.section .beer .beerTit{color: #fff;text-align: center;padding: 20px;font-size: 2.5em;/}
+.section .beer .beerTxt{color: #fff;text-align: center;padding-bottom: 30px;}
+
+.section .beer .beerbox{float: left;margin: 0 auto;}
+.section .beer .beerleft,
+.section .beer .beerright{width: 48%;padding-top: 40px;}
+.section .beer .beercenter{}
+
+.section .beer .beerbox iframe{width: 80%;height: 600px;display: block;margin: 0 auto;border: 3px solid #fff;
+	padding: 5px;position: relative;}
+.section .beer .beerbox #beeringre{}
+.section .beer .beerbox #beermaster{}
+.section .beer .beerbox .txtbox{text-align: center;color: #fff;padding-top: 30px;}
+
+
+.section .beer  .beercenter{margin: 0 auto;float: none;width: 60%;border: 3px solid #fff;padding: 10px;}
+.section .beer  .beercenter:after{display: block;clear: both;content: '';}
+.section .beer  .beercenter > img{float: left;width: 50%;}
+.section .beer  .beercenter .olimg{float: left;padding-top: 10%;}
+.section .beer  .beercenter .olimg img{margin: 0 auto;display: block;text-align: center;padding-top: 50px;}
+
+.section .beer #shoplist{font-weight: 600; padding: 10px 25px;color: #37BCC8;transition:0.2s;background: #fff;/* display: block; */}
+.section .beer #shoplist:hover{text-decoration: underline;}
+
+
+/* -- bre ------------------------------------------------------------------------------------------- */
+.section .bre{*zoom:1; height: 100%;width: 90%;margin: 0 auto;}
+.section .bre:after{display: block;clear: both;content: '';}
+.section .bre .brewrap{padding-top: 60px;padding-bottom: 20px;}
+
+.section .bre .txtbox{padding: 20px;width: 50%;margin: 0 auto;	color: #474747;}
+.section .bre .breTit{text-align: center;font-size: 2.5em;}
+.section .bre .breTxt{text-align: center;}
+
+.section .beer .beerleft .blTit,
+.section .beer .beerright .brTit{text-align: center;color: #fff;}
+
+
+.section .bre #tourbtn{background:#37BCC8;padding: 15px 0;cursor: pointer;
+	color: #fff;font-weight: 600;margin: 0 auto;margin-top: 20px;width: 40%;text-align: center;}
+.section .bre #tourbtn:hover{text-decoration: underline;}
+
+.section .bre .brebox{float: left;height: 100%;margin-right: 0.5%;margin-left: 0.5%;margin-top:10px;margin-bottom: 50px;
+		padding: 5px;border: 3px solid #37BCC8;}
+
+.section .bre .breleft{width: 49%;}
+.section .bre .breleft .container{overflow: hidden;position: relative;width: 100%;}
+.section .bre .breleft .container .slider{width: 700%;position: relative;}
+.section .bre .breleft .container .slider .item{width: 14.285714%;float: left;}
+.section .bre .breleft .container .slider .item img{width: 100%;}
+
+
+.section .bre .breright{width: 49%;height:100%	}
+.section .bre .breright #brevi{height: 100%;width: 100%;vertical-align: top;}
+
+
+/* -- tour ------------------------------------------------------------------------------------------- */
+.section .tour{ /*padding:0 30px; */background:#37BCC8;*zoom:1;}
+.section .tour:after{display: block;clear: both;content: '';}
+.section .tour .tourwrap{padding: 20px;padding-top: 60px;padding-bottom: 20px;}
+.section .tour .tourwrap:after{display: block;clear: both;content: '';}
+
+.section .tour .tourTit{text-align: center;color: #fff;padding: 20px;font-size: 2.5em;/* padding-top: 80px; */}
+.section .tour .tourTxt{text-align: center;color: #fff;padding-bottom: 30px;}
+
+.section .tour .tourbox{float: left;width: 33%;margin-right: 0.5%;padding: 10px;border: 3px solid #fff;/* margin-bottom: 50px; */}
+.section .tour .tourbox .container{overflow: hidden;position: relative;width: 100%}
+.section .tour .tourbox .container .slider{width: 600%;position: relative;}
+.section .tour .tourbox .container .slider .item{float: left;width: 16.66666%;}
+.section .tour .tourbox .container .slider .item img{width: 100%;}
+.section .tour .tourbox .container .prevbtn{position: absolute;top:50%;margin-top: -20px;left: 0;z-index: 10;}
+.section .tour .tourbox .container .nextbtn{position: absolute;top:50%;margin-top: -20px;right:0;z-index: 10;}
+
+.section .tour .tourbox .txtbox{color: #fff;text-align: center;margin-top:10px;border: 3px solid #fff;padding: 10px;
+		/* background: #474747; */}
+.section .tour .tourleft{}
+.section .tour .tourleft .container .prevbtn{/* top: 50%;margin-top: -20px;left: 0; */}
+.section .tour .tourleft .container .nextbtn{/*right: 10px; */}
+.section .tour .tourcenter{}
+.section .tour .tourright{margin-right: 0;}
+
+
+/* -- reservation ------------------------------------------------------------------------------------------- */
+.section .reser{*zoom:1;/* padding: 20px; */}
+.section .reser:after{display: block;clear: both;content: '';}
+.section .reser .reserwrap{padding-top: 60px;padding-bottom: 20px;}
+.section .reser .reserwrap:after{display: block;clear: both;content: '';}
+
+.section .reser .relbox{float: left;width: 48%;padding: 30px 20px;margin-right: 1%;margin-left: 1%;color: #474747;}
+.section .reser .releft{border:3px solid #37BCC8;}
+.section .reser .releft .tbox{text-align: center;}
+.section .reser .releft .bbox{text-align: center;}
+.section .reser .releft .bbox .txtbox{}
+.section .reser .releft .bbox .txtbox p{/* line-height: 1.7em; */}
+
+.section .reser .reright{border:3px solid #37BCC8;}
+.section .reser .reright .tit{text-align: center;}
+.section .reser .reright .acco{/* border: 1px solid #000; */}
+.section .reser .reright .acco dt{cursor: pointer;padding: 10px 10px;/* border-bottom: 1px solid #000; */}
+.section .reser .reright .acco dt:hover{background: #37BCC8;color: #fff;}
+.section .reser .reright .acco dt span{float: right;}
+.section .reser .reright .acco dt:before{content: 'Q. ';font-weight: bold;padding-right: 5px;}
+.section .reser .reright .acco dd{display: none;padding: 10px 10px;/* background: #f1f1f1; */}
+.section .reser .reright .acco dd:before{content: 'A. ';font-weight: bold;padding-right: 5px;}
+
+.activeacco{background: #37BCC8;color: #fff;}
+
+
+
+/* -- contact ------------------------------------------------------------------------------------------- */
+.section .contact{}
+.section .contact .parallax {background-image: url("imgs/6contact/bg.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding: 90px 30px;}
+.section .contact .parallax .txtbox{text-align: center;color: #fff;background: rgba(0,0,0,0.6);padding: 20px;}
+.section .contact .parallax .txtbox .contTit{font-size: 2.5em;}
+.section .contact .parallax .txtbox #map{width:80%;height:600px;margin: 0 auto;margin-top: 20px;
+	box-shadow:1px 1px 5px #fff;}
+.section .contact .parallax .txtbox #map h4,
+.section .contact .parallax .txtbox #map p{color: #000;}
+.section .contact .parallax .txtbox #map img{width: 100%;}
+
+/* .footer -------------------------------------------------------------------------------------- */
+.footer{}
+.footer p{text-align: center;padding: 30px 0;font-size: 0.8em;color: #474747;text-shadow:0px 1px 1px #ccc;}
+
+/* mmover -------------------------------------------------------------------------------------- */
+.mmover{width: 100%;position: fixed;bottom: 0;left: 0;background: #303E57;padding: 10px;display: none;}
+.mmover:after{display: block;clear: both;content: '';}
+.mmover .mover{float: left;width: 30%;text-align: center;color: #fff;}
+.mmover .mover:nth-child(2){width: 40%;}
+.mmover .mmbtn{font-size: 2em;}
+.mmover .mover #scrollmv{width: 100%;}
+.mmover .mover #scrollmv option{text-align: center;}
+
+
+/* MQ -------------------------------------------------------------------------------------- */
+@media only screen and (max-width:1350px){
+	.section .beer .beercenter{width: 80%;}
+
+}
+@media only screen and (max-width:1024px){
+	.header .gnb{width: 100%;left: 0;margin-left: 0;}
+	.section .beer .beercenter{width: 90%;}
+	.section .story{width: 80%;}
+	.section .story .txtbox{margin-top: 8%;}
+	.section .beer .beerbox iframe{height: 400px;}
+	.section .bre #tourbtn{width: 70%;}
+	
+}
+@media only screen and (max-width:800px){
+	.header{/* height: 50%; */overflow-x: hidden;}
+	.header > img{transform:scalex(3);}
+	.header .fixgnb li:nth-child(1){width: 14%;}
+	.header .fixgnb li:nth-child(2){width: 12%;}
+	.header .fixgnb li:nth-child(3){width: 14%;}
+	.header .fixgnb li:nth-child(4){width: 14%;}
+	.header .fixgnb li:nth-child(5){width: 12%;}
+	.header .fixgnb li:nth-child(6){width: 16%;}
+	.header .fixgnb li:nth-child(7){width: 18%;}
+	.header .fixgnb li a img{width: 50%;}
+	.section .story{width: 60%;}
+	.section .story .txtbox{margin-top: 3%;}
+	.section .beer .beercenter > img{float: none;margin: 0 auto;display: block;width: 100%;}
+	.section .beer .beercenter .olimg{float: none;padding-top: 0;padding-bottom: 20px;}
+	.section .beer .beercenter .olimg img{padding-top: 30px	;}
+	.section .beer .beercenter{width: 70%;}
+
+	.header .fixgnb li a{/* font-size: 0.8em; */}
+	.header .fixgnb li a img{width: 70%;}
+	.section .story .stleft{float: none;width: 100%;padding-bottom: 10px;}
+	.section .story .txtbox{float: none;width: 100%;padding-bottom: 20px;}	
+
+	.section .beer .beerTit{/* font-size: 2em; */}
+	.section .beer .beerTxt{/* font-size: 0.7em; */padding-right: 10px;padding-left: 10px;}
+	.section .beer .beerbox .txtbox{padding-right: 20px;padding-left: 20px;}
+	.section .beer .beerleft .txtbox h1,
+	.section .beer .beerright .txtbox h1{/* font-size: 0.9em; */}
+	.section .beer .beerleft .txtbox h4,
+	.section .beer .beerright .txtbox h4{/* font-size: 0.7em; */}
+	.section .beer .beerleft .txtbox p,
+	.section .beer .beerright .txtbox p{/* font-size: 0.7em; */}
+	.section .beer .beerbox{float: none;}
+	.section .beer .beerleft, .section .beer .beerright{width: 80%;}
+
+	.section .bre .txtbox{width: 80%;}
+	.section .bre #tourbtn{width: 50%;}
+
+	.section .bre .brebox{float: none;width: 80%;margin: 10px auto;}
+
+	.section .tour .tourbox{float: none;width: 80%;margin: 10px auto;}
+	.section .tour .tourTxt{/* font-size: 0.65em; */}
+
+	.section .reser .relbox{float: none;width: 80%;margin: 20px auto;}
+	.section .reser .releft .tbox .txtbox h1{}
+	.section .reser .releft .tbox .txtbox p{/* font-size: 0.6em; */}
+	.section .reser .releft .bbox .txtbox h4,
+	.section .reser .releft .bbox .txtbox p{/* font-size: 0.6em; */}
+	.section .reser .reright .acco{/* font-size: 0.6em; */}
+	.section .reser .reright .acco span{/* font-size: 2em; */}
+
+
+	.section .contact .parallax .txtbox #map{height: 400px;}
+}
+@media only screen and (max-width:480px){
+	.header .fixgnb{display: none;}
+	.header .gnb{display: none;}
+	.header .mheader{display: block;}
+	.header .snsbox{right: 10px;bottom: 10px;}
+	.pagi{display: none;}
+
+	/*
+	@keyframes arrowmv{
+	0%{bottom:10px}
+	50%{bottom:20px}
+	100%{bottom: 10px}
+	 }
+	 */
+
+	.section .story{width: 90%;}
+	.section .beer .beerbox{width: 90%;}
+	.section .beer .beerleft, .section .beer .beerright{width: 100%;}
+	.section .beer .beerbox iframe{height: 350px;}
+	.section .bre .txtbox{width: 100%;}
+	.section .bre .brebox{width: 100%;}
+	.section .bre #tourbtn{width: 80%;}
+	.section .tour .tourbox{width: 100%;}
+	.section .reser .relbox{width: 98%;padding: 30px 0;}
+	.section .reser .releft .bbox .txtbox p{padding: 0 10px;}
+	.section .contact .parallax{padding: 90px 10px;}
+	.section .contact .parallax .txtbox{padding: 20px 10px;}
+	.section .contact .parallax .txtbox #map{height: 300px;}
+	.mmenu ul{padding-top: 10px;}
+
+	.mmover{/* display: block; */}
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+*{margin:0px; padding:0px;}
+li, ol, ul{list-style:none;}
+a{text-decoration:none;}
+
+body{background:#E6E6E6;}
+
+.wrap{width:960px; background:#fff; margin: 30px auto 30px auto; }
+.wrap > .header{ padding:40px 60px 40px 60px; }
+.wrap > .header > h2{}
+.wrap > .header > p{}
+
+.wrap > .nav{width:95%; margin:0 auto 0 auto; border-top: 2px solid #EDEDED; border-bottom: 2px solid #EDEDED; overflow:hidden; padding:5px 0 5px 0;}
+.wrap > .nav > .nav_1{float:left;}
+.wrap > .nav > .nav_1 > p{display:inline; margin: 0px 20px 0px 20px; line-height:25px;}
+.wrap > .nav > .nav_2{ float:right; /*background:lime;*/ width:18%; margin:0 10px 0 0;}
+.wrap > .nav > .nav_2 > .search{ border: 2px solid #ededed; border-radius:25px; 
+												min-height:10px; overflow:hidden; height:25px; }
+.wrap > .nav > .nav_2 > .search  .s1{width:70%; float:left;}
+.wrap > .nav > .nav_2 > .search  .s2{width:30%;  float:right; background:#DDDDDD; text-align:center; font-size:13px; height:25px; line-height:25px; }
+
+.wrap > .section{width:94%; /*background:red;*/ margin:0 auto 0 auto; min-height:30px; overflow:hidden;}
+.wrap > .section > .sec1{float:left; min-height:10px; width:80%;}
+.wrap > .section > .sec1 > .sec1_1{border-bottom: 2px solid #EDEDED; padding:20px 0 0 0;}
+.wrap > .section > .sec1 > .sec1_1 > h1{}
+.wrap > .section > .sec1 > .sec1_1 > p{font-size:12px; margin: 20px 0px 20px 0px;}
+.wrap > .section > .sec1 > .sec1_1 > .box{width:430px; height:280px; background:#CCCCCC; }
+.wrap > .section > .sec1 > .sec1_2{border-bottom: 2px solid #EDEDED; padding:20px 0 0 0;}
+.wrap > .section > .sec1 > .sec1_2 > h1{}
+.wrap > .section > .sec1 > .sec1_2 > p{font-size:12px; margin: 20px 0px 20px 0px;}
+.wrap > .section > .sec1 > .sec1_2 > .box{width:430px; height:280px; background:#CCCCCC; }
+
+.wrap > .section > .sec2{ float:left; min-height:10px;}
+.wrap > .section > .sec2 > .sec2_1{margin:0 0 0 10px;}
+.wrap > .section > .sec2 > .sec2_1 > h3{font-size:13px; margin: 20px 0 0 0;}
+.wrap > .section > .sec2 > .sec2_1 > p{font-size:13px; color:blue;}
+
+.wrap > .footer{width:94%; margin:0 auto 20px auto; }
+.wrap > .footer > p{color:blue; height:30px;}
+
+.num{font-size:25px; line-height:280px; color:#969696; text-align:center; font-weight:bold;}

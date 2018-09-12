@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/*reset*/
+	*{margin:0px; padding:0px;}
+	ul, ol, li{list-style:none;}
+	a{text-decoration:none;}
+	body{position:relative; background:url(bg.gif); background-repeat:no-repeat;
+			background-position:center bottom;}
+
+/*top*/
+	.top{width:80px; height:80px; position:fixed; right:0px;bottom:200px;background:blue; border-radius:50%;}
+	.top:hover{background: white; border:1px solid blue;}
+	.top a{display:block;line-height:80px;text-align:center; font-size:2em;font-weight:bold; color:white;}
+	.top a:hover{color:blue;}
+
+/*layout*/
+	.out{}
+	.out .header{}
+	.out .banner{}
+	.out .section{}
+	.out .footer{}
+	.center{width:960px; margin:0 auto 0 auto;}
+
+/*header*/
+	.header{border-bottom:1px solid #bbb; box-shadow:0px 1px 1px #bbb; position:fixed; width:100%;
+				background:rgba(255, 255, 255, 0.8);}
+	.header .center{}
+	.header .center:after{content:"";display:block;clear:both;}
+	.header .center .logo{float:left; height:200px;}
+	.header .center .logo a{}
+	.header .center .logo a img{}
+
+	.header .center .top_menu{float:right;}
+	.header .center .top_menu a{font-size:0.9em; text-transform:uppercase; color:red;}
+	.header .center .top_menu a:after{content:" | ";}
+	.header .center .top_menu a:nth-child(2):after{content:"";}
+
+	.header .center .gnb_menu{float:left; width: 80%; margin-left:20px;}
+	.header .center .gnb_menu .gnb{}
+	.header .center .gnb_menu .gnb:after{content:""; display:block; clear:both;}
+	.header .center .gnb_menu .gnb li{float:left; padding:140px 0 10px 20px; width:20%; box-sizing:border-box;text-align:center;}
+	.header .center .gnb_menu .gnb li a{font-size:1.3em; text-transform:uppercase;color:#000;}
+	.header .center .gnb_menu .gnb li a:hover{color:red; font-weight:bold;}
+
+/*banner*/
+	.banner{padding-top:230px;}
+	.banner .center{border:1px solid #ccc; box-sizing:border-box;}
+
+/*section*/
+	.section{margin-top:20px; min-height:850px;}
+	.section h2{margin-bottom:10px;}
+	.section .center{}
+	.section .center .group{border-top:1px solid #bbb; padding:5px 10px 5px 10px; box-sizing:border-box;}
+	.section .center .group li{display:inline; }
+	.section .center .group li img{box-shadow:2px 2px 2px #bbb; border:1px solid #bbb;box-sizing:border-box;}
+	.section .center .group li img:hover{opacity:0.8;}
+
+
+/*footer*/
+	.footer{border-top:1px solid #bbb; box-shadow:0px -1px 1px #bbb;}
+	.footer .center{padding:10px;}
+	.footer .center p{font-size:0.9em; text-align:center;}

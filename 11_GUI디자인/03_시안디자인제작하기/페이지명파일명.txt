@@ -1,0 +1,8 @@
+gui 프로젝트 페이지명 - 파일명
+
+메인                         main.html
+줄거리                      story.html
+캐릭터                      character.html
+배우제작진                actor.html
+트레일러                   trailer.html
+포토                         photo.html

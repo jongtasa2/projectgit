@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body{background:url(bg.gif); background-repeat:no-repeat; background-position:center bottom;}
+
+/*section*/
+	.section{margin-top:20px; min-height:850px;}
+	.section h2{margin-bottom:10px;}
+	.section .center{}
+	.section .center .group{border-top:1px solid #bbb; padding:5px 10px 5px 10px; box-sizing:border-box;}
+	.section .center .group li{display:inline; }
+	.section .center .group li img{box-shadow:2px 2px 2px #bbb; border:1px solid #bbb;box-sizing:border-box;}
+	.section .center .group li img:hover{opacity:0.8;}

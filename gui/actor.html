@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>actor</title>
+  <link rel="stylesheet" href="temp.css">
+  <link rel="stylesheet" href="actor.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="temp.js"></script>
+  <script src="actor.js"></script>
+ </head>
+ <body>
+ 
+  <header class="header">
+	<div class="center">
+		<div class="pchdr">
+			<h1 class="logo"><a href="main.html"><img src="images/logotrans.png" alt=""></a></h1>
+			<ul class="gnb">
+				<li><a href="story.html">줄거리</a></li>
+				<li><a href="character.html">캐릭터</a></li>
+				<li><a href="actor.html" class="active">배우/제작진</a></li>
+				<li><a href="trailer.html">트레일러</a></li>
+				<li><a href="photo.html">포토</a></li>
+			</ul>
+			<div class="schbox">
+				<input type="text" class="sch" value="search..." onclick="this.value='';">
+				<a href="#"><i class="material-icons" id="schicon">&#xe8b6;</i></a>
+			</div>
+		</div><!-- pchdr -->
+	</div><!-- center -->
+  </header><!-- header -->
+
+  <div class="mheader">
+	<div class="center">
+		<div class="mhrd">
+			<span class="mmenu" onclick="openNav()"><i class="fa" id="mmenuicon">&#xf039;</i></span>
+			<h1 class="mlogo"><a href="main.html"><img src="images/logotrans.png" alt=""></a></h1>
+			<div class="mschbox">
+					<input type="checkbox" id="mschtoggle" >
+					<input type="text" class="msch" value="search..." onclick="this.value='';">
+					<label for="mschtoggle"><i class="material-icons" id="mschicon">&#xe8b6;</i></label>
+			</div><!-- mschbox -->
+		</div><!-- mhrd -->
+	</div><!-- center -->
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="main.html">홈</a>
+		  <a href="story.html">줄거리</a>
+		  <a href="character.html">캐릭터</a>
+		  <a href="actor.html" class="active">배우/제작진</a>
+		  <a href="trailer.html">트레일러</a>
+		  <a href="photo.html">포토</a>
+		</div>
+  </div><!-- mheader -->
+
+<!-- section ------------------------------------------------------------------------------------------------------------ -->
+  <section class="section">
+	<div class="center">
+
+		<div class="acbox">
+
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/1.jpg" alt="">
+						<div class="actxt">
+							<h4>페이튼 리드</h4>
+							<p class="role">감독</p>
+						</div><!-- actxt -->
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=1881" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/1-1.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">감독</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=92064" target="_blank"><img src="images/ac/1-2.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=92064" target="_blank">앤트맨</a></h4>
+								<p class="name">2015 | 미국 | 영국 | 액션, SF</p>
+								<p class="role">감독</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=95920" target="_blank"><img src="images/ac/1-3.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=95920" target="_blank">더 굿윈 게임즈</a></h4>
+								<p class="name">2013 | 미국 | 드라마</p>
+								<p class="role">감독</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=45944" target="_blank"><img src="images/ac/1-4.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=45944" target="_blank">예스 맨</a></h4>
+								<p class="name">2008 | 미국 | 코미디, 드라마</p>
+								<p class="role">감독</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+			
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/2.jpg" alt="">
+						<div class="actxt">
+							<h4>폴 러드</h4>
+							<p class="role">주연</p>
+							<p class="name">앤트맨 / 스콧 랭 역</p>
+						</div>
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=5159" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=176622" target="_blank"><img src="images/ac/2-1.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=176622" target="_blank">아이디얼 홈</a></h4>
+								<p class="name">2018 | 미국 | 코미디, 드라마</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=167052" target="_blank"><img src="images/ac/2-2.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=167052" target="_blank">더 캐쳐 워즈 어 스파이</a></h4>
+								<p class="name">2018 | 미국 | 드라마, 전쟁</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=151891" target="_blank"><img src="images/ac/2-3.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=151891" target="_blank">뮤트</a></h4>
+								<p class="name">2018 | 영국 | 독일 | 미스터리, SF, 스릴러</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/2-4.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">각본, 주연</p>
+								<p class="nnname">스콧 랭 / 앤트맨 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+			
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/3.jpg" alt="">
+						<div class="actxt">
+							<h4>에반젤린 릴리</h4>
+							<p class="role">주연</p>
+							<p class="name">와스프 / 호프 반 다인 역</p>
+						</div>
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=52031" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=136900" target="_blank"><img src="images/ac/3-1.png" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=136900" target="_blank">어벤져스 4</a></h4>
+								<p class="name">2019 | 미국 | 액션, SF</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/3-2.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">주연</p>
+								<p class="nnname">호프 반 다인 / 와스프 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=158660" target="_blank"><img src="images/ac/3-3.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=158660" target="_blank">리틀이블</a></h4>
+								<p class="name">2017 | 미국 | 코미디, 공포</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=92064" target="_blank"><img src="images/ac/3-4.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=92064" target="_blank">앤트맨</a></h4>
+								<p class="name">2015 | 미국 | 영국 | 액션, SF</p>
+								<p class="role">주연</p>
+								<p class="nnname">호프 반 다인 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/4.jpg" alt="">
+						<div class="actxt">
+							<h4>마이클 더글라스</h4>
+							<p class="role">주연</p>
+							<p class="name">행크 핌 역</p>
+						</div>
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=1068" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=172970" target="_blank"><img src="images/ac/4-1.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=172970" target="_blank">동물세계</a></h4>
+								<p class="name">2018 | 중국 | 액션, 드라마, 서스펜스</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/4-2.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">주연</p>
+								<p class="nnname">행크 핌 박사 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=152679" target="_blank"><img src="images/ac/4-3.png" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=152679" target="_blank">위 해브 올웨이즈 리브드 인 더 캐슬</a></h4>
+								<p class="name">2017 | 미국 | 드라마</p>
+								<p class="role">제작</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=152647" target="_blank"><img src="images/ac/4-4.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=152647" target="_blank">플랫라이너</a></h4>
+								<p class="name">2017 | 미국 | 드라마, 공포, SF, 스릴러</p>
+								<p class="role">제작</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+
+
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/5.jpg" alt="">
+						<div class="actxt">
+							<h4>마이클 페나</h4>
+							<p class="role">주연</p>
+							<p class="name">루이스 역</p>
+						</div>
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=53051" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=169650" target="_blank"><img src="images/ac/5-1.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=169650" target="_blank">익스팅션</a></h4>
+								<p class="name">2018 | 미국 | SF, 스릴러</p>
+								<p class="role">조연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=168039" target="_blank"><img src="images/ac/5-2.png" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=168039" target="_blank">넥스트 젠</a></h4>
+								<p class="name">2018 | 중국 | 캐나다 | 애니메이션, 액션, 모험, 코미디</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=152672" target="_blank"><img src="images/ac/5-3.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=152672" target="_blank">시간의 주름</a></h4>
+								<p class="name">2018 | 미국 | 모험, 가족, 판타지, SF</p>
+								<p class="role">조연</p>
+								<p class="nnname">레드 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/5-4.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">주연</p>
+								<p class="nnname">루이스 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/6.jpg" alt="">
+						<div class="actxt">
+							<h4>로렌스 피시번</h4>
+							<p class="role">주연</p>
+							<p class="name">빌 포스터 역</p>
+						</div>
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=913" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=168012" target="_blank"><img src="images/ac/6-1.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=168012" target="_blank">웨어 유 고, 버나뎃</a></h4>
+								<p class="name">2018 | 미국 | 코미디, 드라마</p>
+								<p class="role">조연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/6-2.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">주연</p>
+								<p class="nnname">빌 포스터 박사 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=154284" target="_blank"><img src="images/ac/6-3.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=154284" target="_blank">라스트 플래그 플라잉</a></h4>
+								<p class="name">2017 | 미국 | 코미디, 드라마, 전쟁</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=143932" target="_blank"><img src="images/ac/6-4.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=143932" target="_blank">존 윅 - 리로드</a></h4>
+								<p class="name">2017 | 미국 | 액션, 범죄, 스릴러</p>
+								<p class="role">조연</p>
+								<p class="nnname">바우어리 킹 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/7.jpg" alt="">
+						<div class="actxt">
+							<h4>미셸 파이퍼</h4>
+							<p class="role">주연</p>
+							<p class="name">재닛 반 다인 역</p>
+						</div>
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=1096" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/7-1.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">주연</p>
+								<p class="nnname">재닛 반 다인 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=158892" target="_blank"><img src="images/ac/7-2.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=158892" target="_blank">웨어 이즈 키라?</a></h4>
+								<p class="name">2017 | 미국 | 드라마</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=147046" target="_blank"><img src="images/ac/7-3.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=147046" target="_blank">더 위저드 오브 라이스</a></h4>
+								<p class="name">2017 | 미국 | 범죄, 드라마</p>
+								<p class="role">조연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=154272" target="_blank"><img src="images/ac/7-4.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=154272" target="_blank">오리엔트 특급 살인</a></h4>
+								<p class="name">2017 | 미국 | 드라마, 미스터리, 범죄</p>
+								<p class="role">주연</p>
+								<p class="nnname">허바드 부인 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/8.jpg" alt="">
+						<div class="actxt">
+							<h4>해나 존-케이먼</h4>
+							<p class="role">주연</p>
+							<p class="name">고스트 / 에이바 역</p>
+						</div>
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=395344" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/8-1.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">주연</p>
+								<p class="nnname">에이바 / 고스트 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=136898" target="_blank"><img src="images/ac/8-2.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=136898" target="_blank">레디 플레이어 원</a></h4>
+								<p class="name">2018 | 미국 | 액션, SF, 모험</p>
+								<p class="role">조연</p>
+								<p class="nnname">피날레 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=158601" target="_blank"><img src="images/ac/8-3.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=158601" target="_blank">툼레이더</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험</p>
+								<p class="role">조연</p>
+								<p class="nnname">소피 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<p id="opbt">Open <span>∨</span></p>
+					<p id="clbt">Close <span>∧</span></p>
+					<div class="accont">
+						<img src="images/ac/9.jpg" alt="">
+						<div class="actxt">
+							<h4>윌튼 고긴스</h4>
+							<p class="role">주연</p>
+							<p class="name">소니 버치 역</p>
+						</div>
+					</div><!-- accont -->
+				</dt>
+				<dd>
+					<div class="morebox">
+						<h3 id="filmo">최근 필모그래피</h3>
+						<p id="morebt"><a href="https://movie.naver.com/movie/bi/pi/basic.nhn?code=85827" target="_blank">더보기 <span>＞</span></a></p>
+					</div><!-- morebox -->
+					<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=168100" target="_blank"><img src="images/ac/9-1.png" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=168100" target="_blank">뎀 댓 팔로우</a></h4>
+								<p class="name">2018 | 미국 | 스릴러</p>
+								<p class="role">주연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank"><img src="images/ac/9-2.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=144330" target="_blank">앤트맨과 와스프</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험, SF</p>
+								<p class="role">조연</p>
+								<p class="nnname">소니 버치 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=158601" target="_blank"><img src="images/ac/9-3.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=158601" target="_blank">툼레이더</a></h4>
+								<p class="name">2018 | 미국 | 액션, 모험</p>
+								<p class="role">조연</p>
+								<p class="nnname">마시아스 보겔 역</p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+						<div class="filmobox">
+							<a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=167725" target="_blank"><img src="images/ac/9-4.jpg" alt=""></a>
+							<div class="filmotxt">
+								<h4><a href="https://movie.naver.com/movie/bi/mi/basic.nhn?code=167725" target="_blank">쓰리 크라이스트</a></h4>
+								<p class="name">2017 | 미국 | 드라마</p>
+								<p class="role">조연</p>
+								<p class="nnname"></p>
+							</div><!-- filmotxt -->
+						</div><!-- filmobox -->
+				</dd>
+			</dl>
+		</div><!-- acbox -->
+
+	</div><!-- center -->
+  </section><!-- section -->
+<!-- section ------------------------------------------------------------------------------------------------------------ -->
+
+  <footer class="footer">
+	<div class="center">
+		<ul class="foocopy">
+			<li><a href="#">Terms of Use</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Your California Privacy Rights</a></li>
+			<li><a href="#">Children's Online Privacy Policy</a></li>
+			<li><a href="#">License Agreement</a></li>
+			<li><a href="#">Interest-Based Ads</a></li>
+			<li><a href="#">Marvel Insider Terms</a></li>
+			<li><span>&copy;2018 MARVEL</span></li>
+		</ul>
+	</div><!-- center -->
+  </footer><!-- footer -->
+
+<style type="text/css">
+/* ------------------------------------------------------------------------------------------------- */
+		.acbox{padding: 10px;}
+		.acbox:after{display: block;clear: both;content: '';}
+
+		dl{width: 46%;background: #fff;float: left;margin-right: 2%;margin-left: 2%;margin-bottom: 2%;box-shadow: 1px 1px 5px #000;}
+
+		dt{padding: 10px;position: relative;}
+		dt #opbt{position: absolute;bottom: 10px;right: 10px;padding: 5px 10px;box-shadow:1px 1px 1px #000;color: #fff;background: #000;cursor: pointer;font-size: 0.9em;border-radius:3px;}
+		dt #opbt span{font-weight: 800;color: red;}
+		dt #clbt{position: absolute;bottom: 10px;right: 10px;padding: 5px 10px;box-shadow:1px 1px 1px #000;color: #fff;background: #000;cursor: pointer;font-size: 0.9em;border-radius:3px;display: none;}
+		dt #clbt span{font-weight: 800;color: red;}
+		dt #clbt,
+		dt #opbt:hover{color:red;}
+
+		dd{padding: 10px;display: none;}
+		dd .morebox{padding: 5px 10px;margin-bottom: 10px;}
+		dd .morebox:after{display: block;clear: both;content: '';}
+		dd .morebox #filmo{float: left;border-top: 3px solid #9d0000;padding:5px ;}
+		dd .morebox #morebt{float: right;background: #000;padding: 5px 8px;border-radius:3px;box-shadow:1px 1px 1px #000;}
+		dd .morebox #morebt a{color: #fff;font-size: 0.9em;}
+		dd .morebox #morebt a span{font-weight: 800;color: red;}
+
+		dd .filmobox{width: 50%;float: left;margin-bottom: 10px;height: 320px;}
+		dd .filmobox > a{width: 100%;display: block;margin: 0 auto;}
+		dd .filmobox > a img{display: block;margin: 0 auto;box-shadow:1px 1px 3px #000;}
+		dd .filmobox .filmotxt{padding: 5px;}
+		dd .filmobox .filmotxt h4{}
+		dd .filmobox .filmotxt h4 a{color:#004CC1;}
+		dd .filmobox .filmotxt h4 a:hover{text-decoration: underline;}
+		dd .filmobox .filmotxt .name{font-size: 0.9em;}
+		dd .filmobox .filmotxt .role{color:orange;font-size: 0.9em;}
+		dd .filmobox .filmotxt .nnname{font-size: 0.9em;}
+
+		.acbox .accont{width: 100%;}
+		.acbox .accont:after{display: block;clear: both;content: '';}
+		.acbox .accont img{float: left;width: 35%;padding: 0 5px;	}
+		.acbox .accont img:hover{/* transform:scale(1.1); */}
+		.acbox .accont .actxt{float: left;width: 65%;padding: 5px;border-top: 3px solid #9D0000;}
+		.acbox .accont .actxt h4{}
+		.acbox .accont .actxt .role{color:orange;font-size: 0.8em;}
+		.acbox .accont .actxt .name{font-size: 0.8em;}
+		
+		
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* ----MQ--------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width:480px){
+	dl{width: 100%;margin-left: 0;margin-right: 0;}
+	
+}
+</style>
+
+<script>
+
+</script>
+ </body>
+</html>

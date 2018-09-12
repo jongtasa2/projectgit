@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* jq1.css */
+@import url('https://fonts.googleapis.com/css?family=Sunflower:300');
+/* font-family: 'Sunflower', sans-serif; */
+
+body{font-family: 'Sunflower', sans-serif;}
+.tit{width:400px;height:60px;border:1px solid magenta; text-align:center; line-height:60px;}

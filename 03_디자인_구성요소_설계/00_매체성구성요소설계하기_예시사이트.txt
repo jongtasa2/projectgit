@@ -1,0 +1,14 @@
+<매체성 구성요소 설계하기-예시 사이트>
+1. 풀무원 http://www.pulmuone.kr
+2. 코베이 http://www.kobay.co.kr
+3. 농심 http://www.nongshim.co.kr/
+4. 오뚜기 https://www.ottogi.co.kr
+...............
+1. 디비컷 http://www.dbcut.com
+2. 미디어쿼리 이에스 https://mediaqueri.es
+
+<Breakpoint-변경지점>
+- 스마트폰 : 480픽셀 이하
+- 태블릿 : 481-768픽셀 
+- 데스크톱(랩톱) : 769픽셀-1024픽셀
+- 와이드 데스크톱 : 1025이상

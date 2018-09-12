@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>temp</title>
+  <link rel="stylesheet" href="temp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="temp.js"></script>
+ </head>
+ <body>
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <header class="header">
+	<div class="center">
+		<div class="pchdr">
+			<h1 class="logo"><a href="#"><img src="images/logotrans.png" alt=""></a></h1>
+			<ul class="gnb">
+				<li><a href="#">줄거리</a></li>
+				<li><a href="#">캐릭터</a></li>
+				<li><a href="#">배우/제작진</a></li>
+				<li><a href="#">트레일러</a></li>
+				<li><a href="#">포토</a></li>
+			</ul>
+			<div class="schbox">
+				<input type="text" class="sch" value="search..." onclick="this.value='';">
+				<a href="#"><i class="material-icons" id="schicon">&#xe8b6;</i></a>
+			</div>
+		</div><!-- pchdr -->
+	</div><!-- center -->
+  </header><!-- header -->
+
+  <div class="mheader">
+	<div class="center">
+		<div class="mhrd">
+			<span class="mmenu" onclick="openNav()"><i class="fa" id="mmenuicon">&#xf039;</i></span>
+			<h1 class="mlogo"><a href="#"><img src="images/logotrans.png" alt=""></a></h1>
+			<div class="mschbox">
+					<input type="checkbox" id="mschtoggle" >
+					<input type="text" class="msch" value="search..." onclick="this.value='';">
+					<label for="mschtoggle"><i class="material-icons" id="mschicon">&#xe8b6;</i></label>
+			</div><!-- mschbox -->
+		</div><!-- mhrd -->
+	</div><!-- center -->
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">홈</a>
+		  <a href="#">줄거리</a>
+		  <a href="#">캐릭터</a>
+		  <a href="#">배우/제작진</a>
+		  <a href="#">트레일러</a>
+		  <a href="#">포토</a>
+		</div>
+  </div><!-- mheader -->
+
+
+  <section class="section">
+	<div class="center">
+		section -------------------
+	</div><!-- center -->
+  </section><!-- section -->
+
+  <footer class="footer">
+	<div class="center">
+		<ul class="foocopy">
+			<li><a href="#">Terms of Use</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Your California Privacy Rights</a></li>
+			<li><a href="#">Children's Online Privacy Policy</a></li>
+			<li><a href="#">License Agreement</a></li>
+			<li><a href="#">Interest-Based Ads</a></li>
+			<li><a href="#">Marvel Insider Terms</a></li>
+			<li><span>&copy;2018 MARVEL</span></li>
+		</ul>
+	</div><!-- center -->
+  </footer><!-- footer -->
+
+ </body>
+</html>

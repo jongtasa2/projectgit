@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- 여기에 코딩하시오. -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#div1","#div2","#div3").hide();
+		$(".b1").click(function(){
+			$("#div1").fadeIn();
+			$("#div2").fadeIn(600);
+			$("#div3").fadeIn(3000);
+		});
+
+		$(".b2").click(function(){
+			$("#pp").css({"color":"red"}).slideUp(2000).slideDown(2000);
+		});
+	});
+</script>
+</head>
+<body>
+<h1>김종원 : jQuery 효과 </h1>
+<p style="color:red;">문제1, 문제2 의 제이쿼리 코딩을 <br>
+반드시 &lt;/head&gt; 위에 코딩하시오.</p>
+
+<h1>문제1.</h1>
+<button class="b1">Click to fade in boxes</button><br><br>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+<h1>문제2.</h1>
+<p id="pp">jQuery is fun!!</p>
+<button class="b2">Click me</button>
+</body>
+</html>

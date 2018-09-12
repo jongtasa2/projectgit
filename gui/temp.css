@@ -1,0 +1,155 @@
+@charset "utf-8"
+/* temp.css */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto');
+/* font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+/* reset -------------------------------------------------------------------------------------------------------- */
+	*{margin: 0;padding: 0;box-sizing:border-box;}
+	li,ol,ul{list-style: none;}
+	img{border: none;vertical-align: top;}
+	a{text-decoration: none;}
+	body{font:normal 1em/1.5em 'Nanum Gothic', sans-serif;}
+
+/* layout -------------------------------------------------------------------------------------------------------- */
+	.header{background: #fff url("images/mvimg1.png") no-repeat right; border-top: 8px solid #9D0000;border-bottom: 8px solid #9D0000;}
+	.section{background: #fff /* url("images/mvimg1.png") no-repeat bottom left */;}
+	.footer{background: #000;}
+	.center{max-width: 1000px;margin: 0 auto;}
+	.mheader{border-top: 4px solid #9D0000; border-bottom: 4px solid #9D0000; /**/}
+
+	
+
+/* header -------------------------------------------------------------------------------------------------------- */
+	.header{}
+	.header .pchdr{padding: 15px;}
+	.header .pchdr:after{content: '';display: block;clear: both;}
+
+	.header .pchdr .logo{width: 15%;float: left;background: url("images/mvimg3.png") center left no-repeat;/* background-size:90%; */}
+	.header .pchdr .logo a{width: 100%;}
+	.header .pchdr .logo a img{width: 100%;}
+
+	.header .pchdr .gnb{width: 65%;float: left;margin-top: 10px;}
+	.header .pchdr .gnb:after{display: block;clear: both;content: '';}
+	.header .pchdr .gnb li{float: left;width: 20%;}
+	.header .pchdr .gnb li a{display: block;padding: 10px;text-align: center;color:#9D0000;font-weight: 600;}
+	.header .pchdr .gnb li a:hover{color:#EFC939;transition:0.3s;}
+
+	.header .pchdr .schbox{width: 20%;float: left;margin-top: 15px;px;}
+	.header .pchdr .schbox:after{display: block;clear: both;content: '';}
+	.header .pchdr .schbox .sch{border: 2px solid #9D0000;outline: none;height: 34px;width: 80%;float: left;border-radius:10px 0 0 10px;padding: 0 10px;}
+	.header .pchdr .schbox a{float: left;}
+	.header .pchdr .schbox a #schicon{font-size: 30px;border: 2px solid #9D0000;background:#9D0000 ;border-radius:0 10px 10px 0;color: #fff;}
+	.header .pchdr .schbox a #schicon:hover{color:#EFC939;transition:0.3s;}
+
+/* mheader -------------------------------------------------------------------------------------------------------- */
+	.mheader{ display: none; /**/background: url("images/mvimg5.png") center no-repeat;/* background-size:20% ; */}
+	.mheader .mhrd{position: relative;padding: 15px;	}
+	.mheader .mhrd:after{display: block;clear: both;content: '';}
+
+	.mheader .mhrd .mmenu{position: absolute;top: 30%;}
+	.mheader .mhrd .mmenu #mmenuicon{font-size: 35px;cursor: pointer;color: #9D0000;	}
+
+	.mheader .mhrd .mlogo{width: 15%;margin: 0 auto;}
+	.mheader .mhrd .mlogo a{}
+	.mheader .mhrd .mlogo a img{width: 100%;}
+
+	.mheader .mhrd .mschbox{position: absolute;right: 0;top: 30%;/* border: 1px solid #000; */margin-right: 20px;}
+	.mheader .mhrd .mschbox:after{clear: both;display: block;content: '';}
+	.mheader .mhrd .mschbox #mschtoggle{display: none;}
+	.mheader .mhrd .mschbox .msch{float: left;height: 35px;display: none;border: 1px solid #9D0000;outline: none;border-radius: 10px 10px 10px 10px;padding: 0 10px;}
+	.mheader .mhrd .mschbox #mschicon{float: left;font-size: 35px;background: #9D0000;color: #fff;border-radius: 10px 10px 10px 10px ;cursor: pointer;}
+
+	.mheader .mhrd .mschbox #mschtoggle:checked ~ .msch,#mschicon{display: block;}
+	.mheader .mhrd .mschbox #mschtoggle:checked ~ #mschicon{border-radius:0 10px 10px 0;}
+
+	.mgnb{width: 0%;position: absolute;	overflow: hidden;}
+	.mgnb:after{display: block;clear: both;content: '';}
+	.mgnb li{float: left;width: 20%;/* border: 1px solid #9D0000; */	}
+	.mgnb li a{text-align: center;display: block;padding: 10px;color:#fff;font-weight: 600;background:#9D0000 ;	}
+	.mgnb li a:hover{color:#EFC939;transition:0.3s;}
+
+/* footer -------------------------------------------------------------------------------------------------------- */
+	.footer{}
+	.footer .foocopy{/*padding: 15px; border: 1px solid #fff; */}
+	.footer .foocopy:after{display: block;clear: both;content: '';}
+	.footer .foocopy li{color: #fff;float: left;font-size: 0.75em;width: 25%;font-weight: 500;text-align: center;padding: 10px;}
+	.footer .foocopy li span{color: #EC1D24;}
+	.footer .foocopy li a{color: #fff;text-align: center;}
+	.footer .foocopy li a:hover{color: #aaa;}
+
+/* overlay menu -------------------------------------------------------------------------------------------------------- */
+	/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 45px;
+    margin-left: 50px;
+}
+
+.active{color: #EFC939 !important;}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9D0000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9D0000; 
+}
+
+/* temp rwd -------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width:1024px) {
+	.header{display: none;}
+	.mheader{display: block;}
+}
+
+@media only screen and (max-width:480px){
+	.footer .foocopy li{width: 50%;}
+	.mheader{background-size:65%}
+	.mheader .mhrd .mmenu{top: 30%;}
+	.mheader .mhrd .mschbox{top: 30%;}
+	.mheader .mhrd .mlogo{width: 30%;}
+
+}

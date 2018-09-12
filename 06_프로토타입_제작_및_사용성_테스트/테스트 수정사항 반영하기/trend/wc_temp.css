@@ -1,0 +1,62 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Nanum Gothic', sans-serif;*/
+
+/*reset*/
+	*{margin:0px; padding:0px;}
+	ul, ol, li{list-style:none;}
+	a{text-decoration:none;}
+	body{position:relative; font-family: 'Nanum Gothic', sans-serif;}
+
+/*top*/
+	.top{width:80px; height:80px; position:fixed; right:300px;bottom:100px;background:blue; border-radius:50%;}
+	.top:hover{background: white; border:1px solid blue;}
+	.top a{display:block;line-height:80px;text-align:center; font-size:2em;font-weight:bold; color:white;}
+	.top a:hover{color:blue;}
+
+/*layout*/
+	.out{}
+	.out .header{}
+	.out .banner{}
+	.out .section{}
+	.out .footer{}
+	.center{width:960px; margin:0 auto 0 auto;}
+
+/*header*/
+	.header{border-bottom:1px solid #000; width:100%;}
+	.header .center{}
+	.header .center:after{content:"";display:block;clear:both;}
+	.header .center .logo{float:left; height:200px; width:18%;}
+	.header .center .logo a{height:40px;display:block; }
+	.header .center .logo a img{}
+
+	.header .center .top_menu{float:right;}
+	.header .center .top_menu a{font-size:0.7em; text-transform:capitalize;color:#000;}
+	.header .center .top_menu a:after{content:" | ";}
+	.header .center .top_menu a:nth-child(2):after{content:"";}
+	.header .center .top_menu a:hover{color:blue;}
+
+	.header .center .gnb_menu{float:right; width:80%;}
+	.header .center .gnb_menu .gnb{}
+	.header .center .gnb_menu .gnb:after{content:""; display:block; clear:both;}
+	.header .center .gnb_menu .gnb li{float:left;margin:119px 0px 0px 0px;width:25%;text-align:center;}
+	.header .center .gnb_menu .gnb li a{font-size:1.5em; display:block; padding:10px 0 15px 0; 
+														transition:0.3s; color:#222;}
+	.header .center .gnb_menu .gnb li a:hover{font-weight:bold;border-top:2px solid #222;background:#eee;}
+
+	.active{font-weight:bold;border-top:2px solid #222;background:#eee;}
+	
+
+/*banner*/
+	.banner{padding-top:10px;}
+	.banner .center{border:1px solid #ccc; box-sizing:border-box;margin-bottom:10px;}
+	.banner .center img{vertical-align:top;}
+
+/*section*/
+	
+
+/*footer*/
+	.footer{border-top:1px solid #bbb; box-shadow:0px -1px 1px #bbb;}
+	.footer .center{padding:10px;}
+	.footer .center p{font-size:0.9em; text-align:center;}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>0515_div_color</title>
+	<style type="text/css">
+		/* reset */
+			*{margin:0px; padding:0px;}
+			ol, ul, li{list-style:none;}
+
+	.wrap{}
+	.wrap > .red{background:red; padding:2px 0px 2px 0px}
+	.wrap > .red > .header{height:100px; width: 70%; line-height:100px;}
+	.wrap > .blue{background:blue; padding:2px 0px 2px 0px}
+	.wrap > .blue > .nav{height:100px; width: 70%; line-height:100px;}
+	.wrap > .green{background:green; padding:1px 0px 1px 0px}
+	.wrap > .green >.sec1{overflow:hidden; width: 70%; margin: 1px auto 1px auto;}
+	.wrap > .green > .sec1 > .section{height:400px; line-height:400px; float:left; margin: 2px auto 2px auto; width:90%;}
+	.wrap > .green > .sec1 > .aside{height:400px; line-height:400px;float:right; width: 9%;}
+	.wrap > .yellow{background:yellow; padding:2px 0px 2px 0px}
+	.wrap > .yellow > .footer{height:100px; width: 70%; line-height:100px;}
+
+	.wrap > .red > .header,
+    .wrap > .blue > .nav,
+	.wrap > .green > .sec1 > .section,
+	.wrap > .green > .sec1 > .aside,
+	.wrap > .yellow > .footer{border-color:#000; border-style:solid; border-width:1px; background:#fff; margin: 2px auto 2px auto; text-align:center;}
+	</style>
+
+ </head>
+ <body>
+  <div class="wrap">
+	<div class="red">
+		<header class="header">Header<header>
+	</div>
+	<div class="blue">
+		<nav class="nav">Navigation</nav>
+	</div>
+	<div class="green">
+		<div class="sec1">
+				<section class="section">Section</section>
+				<aside class="aside">Aside</aside>
+		</div>
+	</div>
+	<div class="yellow">
+		<footer class="footer">Footer</footer>
+	</div>
+  </div><!--wrap-->
+ </body>
+</html>

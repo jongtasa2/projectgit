@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>main</title>
+  <link rel="stylesheet" href="temp.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="temp.js"></script>
+  <script src="trailer.js"></script>
+ </head>
+ <body>
+ 
+  <header class="header">
+	<div class="center">
+		<div class="pchdr">
+			<h1 class="logo"><a href="main.html"><img src="images/logotrans.png" alt=""></a></h1>
+			<ul class="gnb">
+				<li><a href="story.html">줄거리</a></li>
+				<li><a href="character.html">캐릭터</a></li>
+				<li><a href="actor.html">배우/제작진</a></li>
+				<li><a href="trailer.html" class="active">트레일러</a></li>
+				<li><a href="photo.html">포토</a></li>
+			</ul>
+			<div class="schbox">
+				<input type="text" class="sch" value="search..." onclick="this.value='';">
+				<a href="#"><i class="material-icons" id="schicon">&#xe8b6;</i></a>
+			</div>
+		</div><!-- pchdr -->
+	</div><!-- center -->
+  </header><!-- header -->
+
+  <div class="mheader">
+	<div class="center">
+		<div class="mhrd">
+			<span class="mmenu" onclick="openNav()"><i class="fa" id="mmenuicon">&#xf039;</i></span>
+			<h1 class="mlogo"><a href="main.html"><img src="images/logotrans.png" alt=""></a></h1>
+			<div class="mschbox">
+					<input type="checkbox" id="mschtoggle" >
+					<input type="text" class="msch" value="search..." onclick="this.value='';">
+					<label for="mschtoggle"><i class="material-icons" id="mschicon">&#xe8b6;</i></label>
+			</div><!-- mschbox -->
+		</div><!-- mhrd -->
+	</div><!-- center -->
+		
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="main.html">홈</a>
+		  <a href="story.html">줄거리</a>
+		  <a href="character.html">캐릭터</a>
+		  <a href="actor.html">배우/제작진</a>
+		  <a href="trailer.html"  class="active">트레일러</a>
+		  <a href="photo.html">포토</a>
+		</div>
+  </div><!-- mheader -->
+
+<!-- section ------------------------------------------------------------------------------------------------------------ -->
+  <section class="section">
+	<div class="center">
+		<div class="pccont">
+			<div class="vibox">
+				<iframe src="https://www.youtube.com/embed/8_rTIAOohas?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div><!-- vibox -->
+			<h1 class="htw">↓ 스크롤 해서 보고싶은 영상을 선택하세요. ↓</h1>
+			<div class="playlist">
+				<div class="slider">
+					<img src="images/tra/tr2.png" data-src="https://www.youtube.com/embed/8_rTIAOohas?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+					<img src="images/tra/tr1.png" data-src="https://www.youtube.com/embed/UUkn-enk2RU?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+					<img src="images/tra/tr3.png" data-src="https://www.youtube.com/embed/94LMvchi7lY?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+					<img src="images/tra/tr4.png" data-src="https://www.youtube.com/embed/TmIpM601d1M?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+					<img src="images/tra/tr5.png" data-src="https://www.youtube.com/embed/Tf478vUmdfU?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+					<img src="images/tra/tr6.png" data-src="https://www.youtube.com/embed/2Y3dkXN6px8?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+					<img src="images/tra/tr7.png" data-src="https://www.youtube.com/embed/4W_HuzWLLpQ?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+					<img src="images/tra/tr8.png" data-src="https://www.youtube.com/embed/YkzH-hFIscM?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+					<img src="images/tra/tr9.png" data-src="https://www.youtube.com/embed/jby0VLnljXw?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				</div>
+			</div>
+		</div><!-- pccont -->
+
+		<div class="mcont">
+			<h3 class="mconttxt">보고싶은 영상을 터치하세요.</h3>
+			<div class="imgbox">
+				<img src="images/tra/tr2.png" data-msrc="https://www.youtube.com/embed/8_rTIAOohas?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<img src="images/tra/tr1.png" data-msrc="https://www.youtube.com/embed/UUkn-enk2RU?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<img src="images/tra/tr3.png" data-msrc="https://www.youtube.com/embed/94LMvchi7lY?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<img src="images/tra/tr4.png" data-msrc="https://www.youtube.com/embed/TmIpM601d1M?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<img src="images/tra/tr5.png" data-msrc="https://www.youtube.com/embed/Tf478vUmdfU?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<img src="images/tra/tr6.png" data-msrc="https://www.youtube.com/embed/2Y3dkXN6px8?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<img src="images/tra/tr7.png" data-msrc="https://www.youtube.com/embed/4W_HuzWLLpQ?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<img src="images/tra/tr8.png" data-msrc="https://www.youtube.com/embed/YkzH-hFIscM?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<img src="images/tra/tr9.png" data-msrc="https://www.youtube.com/embed/jby0VLnljXw?list=PLK5HARgNfgj9nLsFTGkHpsUgU2_NFFYqB" alt="">
+				<div class="contol">
+					<iframe src="" class="mif"></iframe>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div><!-- center -->
+  </section><!-- section -->
+<!-- section ------------------------------------------------------------------------------------------------------------ -->
+
+  <footer class="footer">
+	<div class="center">
+		<ul class="foocopy">
+			<li><a href="#">Terms of Use</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+			<li><a href="#">Your California Privacy Rights</a></li>
+			<li><a href="#">Children's Online Privacy Policy</a></li>
+			<li><a href="#">License Agreement</a></li>
+			<li><a href="#">Interest-Based Ads</a></li>
+			<li><a href="#">Marvel Insider Terms</a></li>
+			<li><span>&copy;2018 MARVEL</span></li>
+		</ul>
+	</div><!-- center -->
+  </footer><!-- footer -->
+
+<style type="text/css">
+/* pc ----------------------------------------------------------------------- */
+	.vibox{padding: 10px 0;}
+	.vibox iframe{width: 100%;border: none;height: 600px;vertical-align: top;}
+
+	.htw{text-align: center;padding: 10px;}
+
+	.playlist{border-top: 6px solid #9D0000; border-bottom: 6px solid #9D0000;padding: 5px 0;width: 100%;overflow-x:scroll; margin: 10px 0; }
+	.playlist .slider{width: 2295px;height: 140px}
+	.playlist .slider:after{display: block;clear: both;content: '';}
+	.playlist .slider img{float: left;width: 250px;height:140px;margin-right: 5px;cursor: pointer;border-radius:10px;}
+/* pc ----------------------------------------------------------------------- */
+
+/* m ----------------------------------------------------------------------- */
+	.mcont{display: none;}
+	.mconttxt{text-align: center;padding: 10px;}
+	.mcont .imgbox{padding: 10px;}
+	.mcont .imgbox:after{display: block;clear: both;content: '';}
+	.mcont .imgbox img{width: 30%;height: 150px;float: left;border-radius:10px;margin-left: 1.6%;margin-right: 1.6%;margin-bottom: 10px;}
+
+	.contol{position: fixed;top: 0;left: 0;background: rgba(0,0,0,0.6);width: 100%;height: 100%;display: none;}
+	.contol .mif{width: 100%;position: relative;top: 15%;height: 60%;border: none;	}
+/* m ----------------------------------------------------------------------- */
+
+/* rwd ----------------------------------------------------------------------- */
+@media only screen and (max-width:1024px){
+	
+}
+@media only screen and (max-width:480px){
+	.pccont{display: none;}
+	.mcont{display: block;}
+}
+
+
+
+
+
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
+ </body>
+</html>

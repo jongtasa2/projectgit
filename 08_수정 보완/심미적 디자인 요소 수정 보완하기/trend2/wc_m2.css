@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/*section*/
+	.section{}
+	.section .center{}
+	.section .center p{border-bottom:1px solid #222; margin:0 0 10px 0; padding:5px;
+								font-size:1.3em; font-weight:bold;}
+	.section .center img{display:block; margin:0 auto 10px auto;}
+	.section .center img:hover{background-size:1em;}
+	.section .center img:last-child{margin-bottom:30px;}
